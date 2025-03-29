@@ -4,82 +4,73 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./src/output.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Footer Example</title>
     </head>
     <body>
+        <footer class="w-screen h-auto py-7 m-1 bg-[#659f8f] dark:bg-[#313131] md:rounded-lg sm:">
+            <div class="container py-10 px-35 sm:px- md:px-6">
+                <div class="flex flex-wrap sm:flex-col md:flex-row sm:gap-4 md:gap-10 md:block">
 
-        <footer class="w-screen h-auto py-7 m-1 bg-[#659f8f] dark:bg-[#313131]">
-        
-            <div class="container py-10 px-40">
+                    <section class="whitespace-nowrap sm:w-full md:w-1/2 md:mb-6">
 
-                <div class="flex gap-40">
-                    
-                    <div class="sm:col-span-2">
-                        
-                        <h1 class="max-w-lg text-2x1 mb-5" >Subscribe to our newsletter for updates.</h1>
-                        
-                        <div class="flex gap-3">
-                            <input id="email" type="text" placeholder="Email Address" class="bg-slate-50 rounded-md w-auto h-10 p-4">
-                                <section>
-                                        <button class="bg-amber-600 text-white w-30 h-10 rounded-lg">
-                                        Subscribe
-                                        </button>
-                                </section>
-                                
-                        </div>
-                    
-                    </div>
-                    
-                    <div class="grid grid-cols-2  gap-40">
-                        
-                        <div class="">
+                        <h1 class="wh mb-5 text-base sm:text-lg md:text-xl lg:text-2xl ">
+                            Subscribe to our newsletter for updates.
+                        </h1>
+
+                        <div class="flex flex-col sm:flex-row gap-3 sm:gap-2 md:gap-5 sm:mb-10">
+
+                            <input id="email" type="text" placeholder="Email Address" class="bg-slate-50 rounded-md w-full sm:w-auto md:w-60 h-10 p-4">
                             
-                            <p class="text-[#313131]">Quick Link</p>
-                            
-                            <div class="block">
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Who We Are</a></li>
-                                    <li><a href="#">Our Philosophy</a></li>
-                                </ul>
-                                    
-                                    
-                            </div>
+                            <section>
 
+                                <button class=" bg-amber-600 text-white w-full sm:w-auto md:w-30 h-10 rounded-lg hover:bg-amber-700">
+                                Subscribe
+                                </button>
+
+                            </section>
                         </div>
-                        
+                    </section>
+
+                    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5 sm:gap-8 md:gap-10">
                         <div>
-                            
-                            <p class="text-[#313131]">Technologies</p>
-                            
-                            <div class="block">
-                                <ul>
-                                    <li><a href="#">HTML</a></li>
-                                    <li><a href="#">CSS</a></li>
-                                    <li><a href="#">JavaScript</a></li>
+                            <p class="mb-4 sm:text-base md:text-lg">Quick Link</p>
+                            <div class="block text-[#313131]">
+                                <ul class="leading-relaxed">
+                                    <li><a href="#"class="hover:text-gray-500">Home</a></li>
+                                    <li><a href="#"class="hover:text-gray-500">Who We Are</a></li>
+                                    <li><a href="#"class="hover:text-gray-500">Our Philosophy</a></li>
                                 </ul>
                             </div>
-                        
                         </div>
-                    
-                    </div> 
-                    
-                </div>
-                
-                <hr class="my-6 border-[#d86943] w-auto">
-                
-                <div class="flex">
+                        <div>
+                            <p class="mb-4 sm:text-base md:text-lg">Technologies</p>
+                            <div class="block text-[#313131]">
+                                <ul class="leading-relaxed">
+                                    <li><a href="#"class="hover:text-gray-500">HTML</a></li>
+                                    <li><a href="#"class="hover:text-gray-500">CSS</a></li>
+                                    <li><a href="#"class="hover:text-gray-500">JavaScript</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
 
+                </div>
+                <hr class="my-6 border-[#d86943] w-auto sm:w-full">
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-5 md:gap-10 items-center">
                     <a href="#">
-                        <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
+                        <img class="w-auto h-7 sm:h-6 md:h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
                     </a>
-                    
+                    <div class="w-auto h-auto flex justify-center sm:flex-row sm:gap-2 md:gap-4">
+                        <a href="" class="text-white hover:text-blue-700"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" class="text-white hover:text-blue-600"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="text-white hover:text-pink-700"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" class="text-white hover:text-purple-700"><i class="fa-brands fa-discord"></i></a>
+                    </div>
                 </div>
-
-            </div> 
-
+            </div>
         </footer>
-
     </body>
-
 </html>
